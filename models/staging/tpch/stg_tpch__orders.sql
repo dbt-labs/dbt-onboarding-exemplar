@@ -4,6 +4,8 @@ with source as (
 
 ),
 
+-- I am going to make a new comment
+
 renamed as (
 
     select
