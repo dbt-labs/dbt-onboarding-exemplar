@@ -1,0 +1,31 @@
+version: 2
+models:
+- name: order_test
+  description: This model retrieves all columns from the 'fct_orders' table, providing
+    a comprehensive view of order details including sales, discounts, and customer
+    information.
+  columns:
+  - name: order_id
+    description: A unique identifier for each order.
+  - name: order_date
+    description: The date when the order was placed.
+  - name: customer_id
+    description: A unique identifier for the customer who placed the order.
+  - name: order_status_code
+    description: The current status of the order, represented by a code.
+  - name: priority_code
+    description: A code indicating the priority level of the order.
+  - name: clerk_name
+    description: The name of the clerk who processed the order.
+  - name: ship_priority
+    description: A numerical value indicating the shipping priority of the order.
+  - name: order_count
+    description: The total number of items in the order.
+  - name: gross_item_sales_amount
+    description: The total sales amount before discounts and taxes.
+  - name: item_discount_amount
+    description: The total discount amount applied to the items in the order.
+  - name: item_tax_amount
+    description: The total tax amount applied to the items in the order.
+  - name: net_item_sales_amount
+    description: The total sales amount after discounts and taxes.

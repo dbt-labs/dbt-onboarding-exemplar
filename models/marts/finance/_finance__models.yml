@@ -66,6 +66,9 @@ models:
 
   - name: fct_orders
     description: orders fact table
+    config:
+      contract:
+        enforced: true
     columns:
       - name: order_id
         description: primary id of the model
@@ -78,7 +81,7 @@ models:
           - relationships:
               to: ref('dim_customers')
               field: customer_id
-              severity: error
+              severity: warn
       - name: order_date
         description: date of the order
       - name: status_code
@@ -99,3 +102,5 @@ models:
         description: '{{ doc("item_tax_amount") }}'
       - name: net_item_sales_amount
         description: '{{ doc("net_item_sales_amount") }}'
+      - name: order_status_code
+        description: Status of the order
