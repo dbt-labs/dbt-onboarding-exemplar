@@ -14,6 +14,8 @@ region as (
 ),
 final as (
 
+
+
     select
         supplier.supplier_id,
         supplier.supplier_name,
