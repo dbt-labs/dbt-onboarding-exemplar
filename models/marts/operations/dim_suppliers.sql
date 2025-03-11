@@ -21,7 +21,7 @@ final as (
         nation.name as nation,
         region.name as region,
         supplier.phone_number,
-        supplier.account_balance,
+        supplier.account_balance
         true as example_column
     from
         supplier
