@@ -14,6 +14,7 @@ final as (
 
     select 
 
+
         order_id, 
         order_date,
         customer_id,
