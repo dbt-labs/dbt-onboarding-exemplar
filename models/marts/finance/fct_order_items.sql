@@ -3,6 +3,7 @@
         tags = ['finance']
     )
 }}
+-- demo
 
 with order_item as (
     
