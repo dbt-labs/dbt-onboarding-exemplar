@@ -11,3 +11,6 @@ packages:
     version: 0.6.0
   - package: metaplane/dbt_expectations
     version: 0.8.5
+  - package: calogica/dbt_date
+    version: 0.7.2
+sha1_hash: 68fba642a5abf2c7d2eeaf1c1c0e6aa83e618efd
