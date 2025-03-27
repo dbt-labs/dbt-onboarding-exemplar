@@ -6,7 +6,7 @@ select
     orderid as order_id,
     
     -- descriptions
-    paymentmethod as payment_method,
+    paymentmethod as payment_id,
     status,
     {{ money('amount') }} as amount, -- amount is stored in cents, convert it to dollars
     
