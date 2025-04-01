@@ -10,7 +10,7 @@ models:
         enforced: true
     columns:
       - name: order_id
-        data_type: int
+        data_type: varchar
         constraints:
           # not null constraint is enforced in snowflake
           - type: not_null 
