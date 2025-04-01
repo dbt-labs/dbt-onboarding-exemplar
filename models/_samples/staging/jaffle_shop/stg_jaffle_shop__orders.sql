@@ -40,7 +40,6 @@ renamed as (
         order_date,
         status,
         _etl_loaded_at
-
     from source
 
 )
