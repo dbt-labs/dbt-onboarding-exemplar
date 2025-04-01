@@ -8,6 +8,12 @@ packages:
   - package: brooklyn-data/dbt_artifacts
     version: 2.6.3
   - package: dbt-labs/dbt_project_evaluator
+<<<<<<< HEAD
     version: 0.6.2
   - package: calogica/dbt_expectations
     version: 0.9.0
+=======
+    version: 0.6.0
+  - package: metaplane/dbt_expectations
+    version: 0.8.5
+>>>>>>> 0d3c71a712dc6b1f043efbc46340cb9ff421c8aa
