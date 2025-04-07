@@ -1,18 +1,17 @@
-{{
-    config(
-        materialized='incremental',
-        unique_key='order_item_id'
+{{ config(
 
-    )
+    materialized='incremental',
+    unique_key = 'order_item_id' 
+
+)
 }}
-
 with order_item as (
     
     select * from {{ ref('int_order_items_joined') }}
     {% if is_incremental() %}
-        where commit_date > (select max(commit_date) from {{ this }} )
+        where commit_date > (select dateadd('day', -3, max(commit_date)) from {{ this }} )
     {% endif %}
-
+    
 ),
 part_supplier as (
     
