@@ -1,5 +1,6 @@
 {{
     config(
+        tags=['nightly'],
         materialized='incremental',
         unique_key = 'page_view_id',
         incremental_strategy='delete+insert',

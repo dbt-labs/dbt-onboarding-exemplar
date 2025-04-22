@@ -1,6 +1,6 @@
 {{
     config(
-        tags = ['finance', 'hourly']
+        tags = ['finance', 'hourly','nightly']
     )
 }}
 

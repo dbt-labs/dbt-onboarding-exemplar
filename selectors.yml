@@ -8,3 +8,13 @@ selectors:
         - intersection:
           - 'config.materialized:snapshot'
           - 'tag:daily'
+          
+  - name: nightly_diet_snowplow
+    description: "Non-incremental Snowplow models that power nightly exports"
+    definition:
+      union:
+        - intersection:
+          - '@source:snowplow'
+          - 'tag:nightly'
+        - exclude:
+          - 'config.materialized:incremental'
