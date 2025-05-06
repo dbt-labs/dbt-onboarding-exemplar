@@ -90,3 +90,5 @@ If you need access, open a request in the #training-rapid-onboarding Slack chann
       - `dbt run`   - builds the models found in the project into your dev schema in the warehouse.
   
 </details>
+
+this is comment
