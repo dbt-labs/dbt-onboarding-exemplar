@@ -1,6 +1,7 @@
 with source as (
 
     select * from {{ source('tpch', 'orders') }}
+    {{ limit_data_in_dev('o_orderdate', 10000) }}
 
 ),
 
@@ -32,4 +33,3 @@ renamed as (
 )
 
 select * from renamed
-{{ limit_data_in_dev('order_date', 10000) }}

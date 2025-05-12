@@ -65,6 +65,8 @@ models:
         description: '{{ doc("net_item_sales_amount") }}'
 
   - name: fct_orders
+    data_tests:
+      - not_empty
     description: orders fact table
     columns:
       - name: order_id
