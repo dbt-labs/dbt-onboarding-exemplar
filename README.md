@@ -1,6 +1,6 @@
 # dbt Training - dbt Onboarding Exemplar
 
-This is a [dbt](https://www.getdbt.com) project for dbt Lab's Rapid Onboarding training.
+This is a [dbt](https://www.getdbt.com) project for dbt Lab's dbt Onboarding training.
 
 Our analytics stack:
 - Loader: Snowflake's TPCH sample data
