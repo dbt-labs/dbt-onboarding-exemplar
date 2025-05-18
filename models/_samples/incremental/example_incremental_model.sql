@@ -1,16 +1,14 @@
-{{
-    config(
-        materialized='incremental',
-        on_schema_change='sync_all_columns'
-    )
-}}
-
+{{ config(
+    materialized='incremental',
+    incremental_strategy='microbatch',
+    unique_key='event_id', 
+    event_time='event_timestamp',
+    begin='2023-01-01',
+    batch_size='day'
+) }}
+    
 with source as (
     select * from {{ ref('example_source_for_incremental') }}
-    {% if is_incremental() %}
-        -- this filter will only be applied on an incremental run
-        where _etl_loaded_at > (select max(_etl_loaded_at) from {{ this }}) 
-    {% endif %}
 )
 
 select *
