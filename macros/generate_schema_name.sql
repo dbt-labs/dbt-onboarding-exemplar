@@ -2,13 +2,13 @@
 
     {%- set default_schema = target.schema -%}
     {%- set env = env_var('DBT_ENV_NAME') -%}
-    {%- if custom_schema is none and env != 'dev' -%}
+    {%- if custom_schema is not none and env != 'dev' -%}
 
-        {{ default_schema }}
+        {{ custom_schema_name | trim }}
 
     {%- else -%}
 
-        {{ custom_schema_name | trim }}
+        {{ default_schema }}
 
     {%- endif -%}
 
