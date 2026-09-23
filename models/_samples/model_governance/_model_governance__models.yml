@@ -44,7 +44,7 @@ models:
     versions:
       - v: 2
         config:
-          alias: example_private_finance_model
+          alias: example_private_finance_model #optional
           columns:
             - include: all
               exclude:
