@@ -38,6 +38,7 @@ on-run-end:
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
 models:
+  +static_analysis: strict
   rapid_onboarding_exemplar:
     marts:
       +materialized: table
