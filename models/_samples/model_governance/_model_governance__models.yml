@@ -45,10 +45,10 @@ models:
       - v: 2
         config:
           alias: example_private_finance_model #optional
-          columns:
-            - include: all
-              exclude:
-                - priority_code
+        columns:
+          - include: all
+            exclude:
+              - priority_code
       - v: 1
 
   - name: example_selecting_from_private_model
