@@ -6,7 +6,8 @@ packages:
   - package: dbt-labs/audit_helper
     version: 0.9.0
   - package: brooklyn-data/dbt_artifacts
-    version: 2.6.2
+    version: 2.11.1
+
   - package: dbt-labs/dbt_project_evaluator
     version: 0.6.0
   - package: metaplane/dbt_expectations

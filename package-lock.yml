@@ -1,23 +1,23 @@
 packages:
-  - name: codegen
-    package: dbt-labs/codegen
-    version: 0.9.0
-  - name: dbt_utils
-    package: dbt-labs/dbt_utils
-    version: 1.3.3
-  - name: audit_helper
-    package: dbt-labs/audit_helper
-    version: 0.9.0
-  - name: dbt_artifacts
-    package: brooklyn-data/dbt_artifacts
-    version: 2.6.2
-  - name: dbt_project_evaluator
-    package: dbt-labs/dbt_project_evaluator
-    version: 0.6.0
-  - name: dbt_expectations
-    package: metaplane/dbt_expectations
-    version: 0.10.9
-  - name: dbt_date
-    package: godatadriven/dbt_date
-    version: 0.18.0
-sha1_hash: 63748c15854bc9e7c6eae163d0a429d9db68e782
+- package: dbt-labs/audit_helper
+  name: audit_helper
+  version: 0.9.0
+- package: dbt-labs/codegen
+  name: codegen
+  version: 0.9.0
+- package: brooklyn-data/dbt_artifacts
+  name: dbt_artifacts
+  version: 2.11.1
+- package: godatadriven/dbt_date
+  name: dbt_date
+  version: 0.21.0
+- package: metaplane/dbt_expectations
+  name: dbt_expectations
+  version: 0.10.9
+- package: dbt-labs/dbt_project_evaluator
+  name: dbt_project_evaluator
+  version: 0.6.0
+- package: dbt-labs/dbt_utils
+  name: dbt_utils
+  version: 1.3.3
+sha1_hash: b72242f9e0fe5460c15d0a2e83a3ff81fb1810ab
