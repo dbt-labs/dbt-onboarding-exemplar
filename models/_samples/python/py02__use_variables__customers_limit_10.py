@@ -1,7 +1,7 @@
 # The required model() function must return a single DataFrame
 def model(dbt, session):
     # bring in variable from config.yml
-    target_name = dbt.config.get("target_name")
+    target_name = dbt.config.meta_get("target_name")
 
     # bring in reference model as dataframe
     customers_df = dbt.ref("dim_customers")
