@@ -38,7 +38,12 @@ on-run-end:
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
 models:
+
+
   rapid_onboarding_exemplar:
+    +persist_docs:
+      relation: true
+      columns: true
     marts:
       +materialized: table
       +tags: ['tag']
